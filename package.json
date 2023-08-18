@@ -1,7 +1,7 @@
 {
     "name":                       "@rse/nunjucks-addons",
     "publishConfig":              { "access": "public" },
-    "version":                    "1.0.1",
+    "version":                    "1.0.2",
     "description":                "Nunjucks Template Rendering Engine Addons",
     "author": {
         "name":                   "Dr. Ralf S. Engelschall",
