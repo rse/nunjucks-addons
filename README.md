@@ -68,6 +68,10 @@ Addons
   Nunjucks context as the global object.
   Example: `{% exec %} foo = "bar" {% endexec %}`
 
+- **glob**: this adds the Nunjucks global function `glob(<pattern>[, <options>])`
+  for expanding file paths with the help of the [glob](https://npmjs.com/glob) package.
+  Example: `{{ glob("*.txt") }}`
+
 - **jsonpath**: this adds the Nunjucks filter `jsonpath(<path>[, <count>])`
   and the Nunjucks global function `jsonpath(<obj>, <path>[, <count>])`
   for selecing sub-fields of an object `<object>` with the help of the
