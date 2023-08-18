@@ -63,6 +63,11 @@ Addons
   similar to the built-in `set` extension, but works on evaluated expressions.
   Example: `{% eval year = "(new Date()).getFullYear()" %}`
 
+- **exec**: this adds the Nunjucks extension `exec <code> endexec`
+  for executing arbitrary JavaScript `<code>` with the
+  Nunjucks context as the global object.
+  Example: `{% exec %} foo = "bar" {% endexec %}`
+
 - **jsonpath**: this adds the Nunjucks filter `jsonpath(<path>[, <count>])`
   and the Nunjucks global function `jsonpath(<obj>, <path>[, <count>])`
   for selecing sub-fields of an object `<object>` with the help of the
