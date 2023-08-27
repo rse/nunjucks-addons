@@ -4,8 +4,12 @@ nunjucks-addons
 
 **Nunjucks Template Rendering Engine Addons**
 
-<p/>
-<img src="https://nodei.co/npm/@rse/nunjucks-addons.png?downloads=true&stars=true" alt=""/>
+[![github (author stars)](https://img.shields.io/github/stars/rse?logo=github&label=author%20stars&color=%233377aa)](https://github.com/rse)
+[![github (author followers)](https://img.shields.io/github/followers/rse?label=author%20followers&logo=github&color=%234477aa)](https://github.com/rse)
+[![github (project stdver)](https://img.shields.io/github/package-json/stdver/rse/nunjucks-addons?logo=github&label=project%20stdver&color=%234477aa)](https://github.com/rse/nunjucks-addons)
+<br/>
+[![npm (project release)](https://img.shields.io/npm/v/%40rse/nunjucks-addons?logo=npm&label=npm%20release&color=%23cc3333)](https://npmjs.com/@rse/nunjucks-addons)
+[![npm (project downloads)](https://img.shields.io/npm/dm/%40rse/nunjucks-addons?logo=npm&label=npm%20downloads&color=%23cc3333)](https://npmjs.com/@rse/nunjucks-addons)
 
 Abstract
 --------
