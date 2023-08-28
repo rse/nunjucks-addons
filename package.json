@@ -11,11 +11,11 @@
     },
     "license":                    "MIT",
     "repository": {
-        "type": "git",
-        "url":  "git://github.com/rse/nunjucks-addons.git"
+        "type":                   "git",
+        "url":                    "git+https://github.com/rse/nunjucks-addons.git"
     },
     "bugs": {
-        "url":  "http://github.com/rse/nunjucks-addons/issues"
+        "url":                    "http://github.com/rse/nunjucks-addons/issues"
     },
     "main":                       "index.js",
     "dependencies": {
