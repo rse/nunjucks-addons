@@ -8,6 +8,7 @@ nunjucks-addons
 [![github (author followers)](https://img.shields.io/github/followers/rse?label=author%20followers&logo=github&color=%234477aa)](https://github.com/rse)
 [![github (project stdver)](https://img.shields.io/github/package-json/stdver/rse/nunjucks-addons?logo=github&label=project%20stdver&color=%234477aa&cacheSeconds=900)](https://github.com/rse/nunjucks-addons)
 <br/>
+[![npm (project license)](https://img.shields.io/npm/l/%40rse%2Fnunjucks-addons?logo=npm&label=npm%20license&color=%23cc3333)](https://npmjs.com/@rse/nunjucks-addons)
 [![npm (project release)](https://img.shields.io/npm/v/%40rse/nunjucks-addons?logo=npm&label=npm%20release&color=%23cc3333)](https://npmjs.com/@rse/nunjucks-addons)
 [![npm (project downloads)](https://img.shields.io/npm/dm/%40rse/nunjucks-addons?logo=npm&label=npm%20downloads&color=%23cc3333)](https://npmjs.com/@rse/nunjucks-addons)
 
