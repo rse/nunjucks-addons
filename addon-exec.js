@@ -13,15 +13,15 @@ module.exports = (env) => {
             this.tags = [ "exec" ]
         }
         parse (parser, nodes, lexer) {
-            var tok = parser.nextToken()
-            var args = parser.parseSignature(null, true)
+            const tok = parser.nextToken()
+            const args = parser.parseSignature(null, true)
             parser.advanceAfterBlockEnd(tok.value)
-            var body = parser.parseUntilBlocks("endexec")
+            const body = parser.parseUntilBlocks("endexec")
             parser.advanceAfterBlockEnd()
             return new nodes.CallExtension(this, "run", args, [ body ])
         }
         run (context, body) {
-            var js = body()
+            const js = body()
             vm.runInNewContext(js, context.ctx)
             return ""
         }
