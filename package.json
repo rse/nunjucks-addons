@@ -1,7 +1,7 @@
 {
     "name":                       "@rse/nunjucks-addons",
     "publishConfig":              { "access": "public" },
-    "version":                    "1.0.6",
+    "version":                    "1.0.7",
     "stdver":                     "1.0.7-GA",
     "description":                "Nunjucks Template Rendering Engine Addons",
     "author": {
