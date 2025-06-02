@@ -4,17 +4,17 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-const addonDate     = require("./addon-date.js")
-const addonDefault  = require("./addon-default.js")
-const addonEval     = require("./addon-eval.js")
-const addonExec     = require("./addon-exec.js")
-const addonGlob     = require("./addon-glob.js")
-const addonJSONPath = require("./addon-jsonpath.js")
-const addonPad      = require("./addon-pad.js")
-const addonSprintf  = require("./addon-sprintf.js")
-const addonUUID     = require("./addon-uuid.js")
+import addonDate     from "./addon-date.js"
+import addonDefault  from "./addon-default.js"
+import addonEval     from "./addon-eval.js"
+import addonExec     from "./addon-exec.js"
+import addonGlob     from "./addon-glob.js"
+import addonJSONPath from "./addon-jsonpath.js"
+import addonPad      from "./addon-pad.js"
+import addonSprintf  from "./addon-sprintf.js"
+import addonUUID     from "./addon-uuid.js"
 
-module.exports = (env) => {
+export default function (env) {
     addonDate(env)
     addonDefault(env)
     addonEval(env)

@@ -4,7 +4,7 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-module.exports = (env) => {
+export default function (env) {
     const globals = {
         toBool: (val) => {
             if      (typeof val === "undefined") return false

@@ -39,12 +39,13 @@ API Usage
 ---------
 
 ```js
-const nunjucks = require("nunjucks")
-const addons   = require("@rse/nunjucks-addons")
+import nunjucks from "nunjucks"
+import addons   from "@rse/nunjucks-addons"
 
 const env = nunjucks.configure("-", {})
 addons(env)
 const output = env.renderString("Hello, {{ who }}!", { who: "World" })
+console.log(output)
 ```
 
 Addons

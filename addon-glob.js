@@ -4,9 +4,9 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-const glob = require("glob")
+import { glob } from "glob"
 
-module.exports = (env) => {
+export default function (env) {
     env.addGlobal("glob", (pattern, options = {}) => {
         return glob.globSync(pattern, options)
     })

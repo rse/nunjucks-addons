@@ -4,9 +4,9 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-const jsonpath = require("jsonpath")
+import jsonpath from "jsonpath"
 
-module.exports = (env) => {
+export default function (env) {
     /*  add a "jsonpath" filter  */
     env.addFilter("jsonpath", (obj, path, count) => {
         let result

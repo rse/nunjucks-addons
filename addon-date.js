@@ -4,10 +4,10 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-const moment = require("moment")
-const nlib   = require("nunjucks/src/lib")
+import moment from "moment"
+import nlib   from "nunjucks/src/lib.js"
 
-module.exports = (env) => {
+export default function (env) {
     /*  add a "date" formatting filter  */
     env.addFilter("date", (date, format, ...args) => {
         let result

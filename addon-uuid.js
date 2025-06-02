@@ -4,9 +4,9 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-const UUID = require("pure-uuid")
+import UUID from "pure-uuid"
 
-module.exports = (env) => {
+export default function (env) {
     env.addGlobal("uuid", (...args) => {
         return (new UUID(...args)).format()
     })

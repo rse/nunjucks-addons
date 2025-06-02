@@ -4,9 +4,9 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-const sprintf = require("sprintfjs")
+import sprintf from "sprintfjs"
 
-module.exports = (env) => {
+export default function (env) {
     /*  add a "sprintf" formatting filter  */
     env.addFilter("sprintf", (value, format, ...args) => {
         return sprintf(format, value, ...args)

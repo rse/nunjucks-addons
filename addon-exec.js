@@ -4,9 +4,9 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-const vm = require("node:vm")
+import vm from "node:vm"
 
-module.exports = (env) => {
+export default function (env) {
     /*  add an "exec" extension  */
     class ExecExtension {
         constructor () {

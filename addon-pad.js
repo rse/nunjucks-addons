@@ -4,7 +4,7 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-module.exports = (env) => {
+export default function (env) {
     /*  add a "pad" formatting filter  */
     env.addFilter("pad", (input, num, char = " ", toRight = false) => {
         if (typeof input !== "string") {

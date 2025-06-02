@@ -4,7 +4,7 @@
 **  Licensed under MIT <http://spdx.org/licenses/MIT.html>
 */
 
-module.exports = (env) => {
+export default function (env) {
     /*  add a "set"-like "eval" extension  */
     class EvalExtension {
         constructor () {
