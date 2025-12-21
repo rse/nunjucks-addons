@@ -2,9 +2,11 @@
 ChangeLog
 =========
 
-1.1.1 (unreleased)
+2.0.0 (2025-12-21)
 ------------------
 
+- REFACTOR: switch to STX build tool
+- REFACTOR: switch to TypeScript source
 - MAINTENANCE: upgraded dependencies
 
 1.1.0 (2025-06-02)
