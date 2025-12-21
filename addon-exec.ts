@@ -8,7 +8,10 @@ import type * as Nunjucks from "nunjucks"
 import vm                 from "node:vm"
 
 export default function (env: Nunjucks.Environment) {
-    /*  add an "exec" extension  */
+    /*  add an "exec" extension
+        SECURITY WARNING: This extension executes JavaScript code in a new context
+        and should only be used with trusted template content. Never use with
+        user-provided templates.  */
     class ExecExtension {
         tags: string[]
         constructor () {

@@ -7,7 +7,9 @@
 import type * as Nunjucks from "nunjucks"
 
 export default function (env: Nunjucks.Environment) {
-    /*  add a "set"-like "eval" extension  */
+    /*  add a "set"-like "eval" extension
+        SECURITY WARNING: This extension uses eval() and should only be used
+        with trusted template content. Never use with user-provided templates.  */
     class EvalExtension {
         tags: string[]
         constructor () {
