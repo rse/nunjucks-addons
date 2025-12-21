@@ -17,7 +17,7 @@ export default function (env: Nunjucks.Environment) {
         }
         let result = input
         if (result.length < num) {
-            const pad = (new Array(num - result.length + 1)).join(char)
+            const pad = char.repeat(num - result.length)
             result = toRight ? result + pad : pad + result
         }
         return result
