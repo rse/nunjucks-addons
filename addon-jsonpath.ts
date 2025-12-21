@@ -9,8 +9,8 @@ import type * as Nunjucks from "nunjucks"
 import jsonpath           from "jsonpath"
 
 export default function (env: Nunjucks.Environment) {
-    /*  add a "jsonpath" filter  */
-    env.addFilter("jsonpath", (obj: any, path: string, count?: number) => {
+    /*  common jsonpath query helper  */
+    const queryJsonPath = (obj: any, path: string, count?: number) => {
         let result
         try {
             result = jsonpath.query(obj, path, count)
@@ -19,18 +19,12 @@ export default function (env: Nunjucks.Environment) {
             return (err as Error).toString()
         }
         return result
-    })
+    }
+
+    /*  add a "jsonpath" filter  */
+    env.addFilter("jsonpath", queryJsonPath)
 
     /*  add a "jsonpath" global function  */
-    env.addGlobal("jsonpath", (obj: any, path: string, count?: number) => {
-        let result
-        try {
-            result = jsonpath.query(obj, path, count)
-        }
-        catch (err) {
-            return (err as Error).toString()
-        }
-        return result
-    })
+    env.addGlobal("jsonpath", queryJsonPath)
 }
 
