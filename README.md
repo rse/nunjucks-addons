@@ -25,14 +25,14 @@ CLI Usage
 
 ```sh
 $ npm install -g @rse/nunjucks-cli @rse/nunjucks-addons
-$ nunjucks -e @rse/nunjucks-addons [...]
+$ nunjucks -p @rse/nunjucks-addons [...]
 ```
 
 Alternatively, instead of globally installing it, you can also use it on-the-fly:
 
 ```sh
 $ npx --yes --package @rse/nunjucks-cli --package @rse/nunjucks-addons -- \
-  nunjucks -e @rse/nunjucks-addons [...]
+  nunjucks -p @rse/nunjucks-addons [...]
 ```
 
 API Usage
