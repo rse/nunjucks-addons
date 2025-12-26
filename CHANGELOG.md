@@ -2,6 +2,12 @@
 ChangeLog
 =========
 
+2.0.2 (2025-12-26)
+------------------
+
+- CLEANUP: cleanup code
+- MAINTENANCE: upgraded dependencies
+
 2.0.1 (2025-12-21)
 ------------------
 
