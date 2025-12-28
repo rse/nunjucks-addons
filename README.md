@@ -101,6 +101,11 @@ Addons
   of [Pure-UUID](https://npmjs.com/pure-uuid).
   Example: `{{ uuid(1) }}`
 
+- **keys**: this adds the Nunjucks filter `keys[(<index>)]`
+  for returning the list of all keys in an object or just the
+  single key at the index position in this list of keys.
+  Example: `{{ obj | keys }}`
+
 License
 -------
 

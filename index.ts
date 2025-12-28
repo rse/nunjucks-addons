@@ -15,6 +15,7 @@ import addonJSONPath from "./addon-jsonpath.js"
 import addonPad      from "./addon-pad.js"
 import addonSprintf  from "./addon-sprintf.js"
 import addonUUID     from "./addon-uuid.js"
+import addonKeys     from "./addon-keys.js"
 
 export default function (env: Nunjucks.Environment) {
     addonDate(env)
@@ -26,5 +27,6 @@ export default function (env: Nunjucks.Environment) {
     addonPad(env)
     addonSprintf(env)
     addonUUID(env)
+    addonKeys(env)
 }
 
