@@ -24,7 +24,7 @@ export default function (env: Nunjucks.Environment) {
         if (obj) {
             try {
                 if (obj[format as keyof typeof obj] && nlib.isFunction(obj[format as keyof typeof obj]))
-                    result = (obj[format as keyof typeof obj] as any)(obj, ...args.slice(2))
+                    result = (obj[format as keyof typeof obj] as any)(...args)
                 else
                     result = obj.format(format)
             }
