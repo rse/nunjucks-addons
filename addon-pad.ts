@@ -9,13 +9,7 @@ import type * as Nunjucks from "nunjucks"
 export default function (env: Nunjucks.Environment) {
     /*  add a "pad" formatting filter  */
     env.addFilter("pad", (input: any, num: number, char: string = " ", toRight: boolean = false) => {
-        if (typeof input !== "string") {
-            if (typeof input.toString === "function")
-                input = input.toString()
-            else
-                input = input + ""
-        }
-        let result = input
+        let result = typeof input === "string" ? input : String(input)
         if (result.length < num) {
             const pad = char.repeat(num - result.length)
             result = toRight ? result + pad : pad + result
