@@ -2,10 +2,15 @@
 ChangeLog
 =========
 
-2.2.0 (2026-05-21)
+2.2.0 (2026-05-22)
 ------------------
 
+- BUGFIX: fix argument handling in `date` filter
+- BUGFIX: harden `pad` filter against non-string/null input
+- BUGFIX: fix null and empty-array handling in `keys` filter
 - UPDATE: update NPM dependencies
+- UPDATE: bump year in copyright messages
+- CLEANUP: ignore `.ase` directory
 
 2.1.0 (2025-12-28)
 ------------------
