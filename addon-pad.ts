@@ -9,6 +9,8 @@ import type * as Nunjucks from "nunjucks"
 export default function (env: Nunjucks.Environment) {
     /*  add a "pad" formatting filter  */
     env.addFilter("pad", (input: any, num: number, char: string = " ", toRight: boolean = false) => {
+        if (input === null || input === undefined)
+            input = ""
         let result = typeof input === "string" ? input : String(input)
         if (result.length < num) {
             const pad = char.repeat(num - result.length)
