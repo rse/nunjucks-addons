@@ -47,6 +47,11 @@
         "@types/node":            "26.6.6",
         "@types/nunjucks":        "3.2.6"
     },
+    "overrides": {
+        "jsonpath": {
+            "underscore":         "1.13.8"
+        }
+    },
     "upd":                        [ "!eslint", "!@eslint/js", "!typescript" ],
     "scripts": {
         "start":                  "stx -v4 -c stx.conf",

@@ -2,6 +2,17 @@
 ChangeLog
 =========
 
+2.2.2 (unreleased)
+------------------
+
+- UPDATE: override `underscore` dependency of `jsonpath` with version 1.13.8
+
+2.2.1 (2026-11-22)
+------------------
+
+- UPDATE [infr]: update NPM dependencies (`moment`, `moment-timezone`, `glob`, etc.)
+- UPDATE [othr]: enable TypeScript rules of `neostandard` in ESLint configuration
+
 2.2.0 (2026-05-22)
 ------------------
 
