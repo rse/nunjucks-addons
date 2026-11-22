@@ -15,6 +15,7 @@ export default [
     pluginJs.configs.recommended,
     ...pluginTS.configs.recommended,
     ...pluginStd({
+        ts: true,
         ignores: pluginStd.resolveIgnoresFromGitignore()
     }),
     {
